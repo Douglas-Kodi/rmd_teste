@@ -15,7 +15,7 @@ class CategoriaSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('categorias')->insert(
+        User::create(
             [
                 [
                     'nome' => 'Fruta',
