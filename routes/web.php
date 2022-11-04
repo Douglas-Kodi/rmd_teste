@@ -24,10 +24,6 @@ Route::get('/', function () {
     ]);
 });
 
-Route::get('/link',function(){
-    Artisan::call('storage:link');
-});
-
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
