@@ -102,7 +102,6 @@ export default {
             return document.getElementById('removeModal'+event).style.display='none';
         },
         getFileUp(e){
-            console.log(e.target.files[0])
             this.imagemUp = e.target.files[0]
             
             let loadImageUp = e.target.files[0]
@@ -135,7 +134,7 @@ export default {
                     "Content-Type": "multipart/form-data",
                 },
             };
-            var formData = new FormData();
+            let formData = new FormData();
             formData.append('_method', 'PUT');
             formData.append('idcateg', this.produto.idcateg);
             formData.append('nome', this.produto.nome);

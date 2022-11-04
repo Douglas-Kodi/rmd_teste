@@ -38,7 +38,6 @@ export default {
     },
     methods:{
         getFile(e){
-            console.log(e.target.files[0])
             this.imagem = e.target.files[0]
             
             let loadImage = e.target.files[0]
@@ -54,13 +53,11 @@ export default {
                     "Content-Type": "multipart/form-data",
                 },
             };
-            var formData = new FormData();
+            let formData = new FormData();
             formData.append('idcateg', this.produto.idcateg);
             formData.append('nome', this.produto.nome);
             formData.append('imagem', this.imagem);
-            for (var value of formData.values()) {
-                console.log(value);
-            }
+
             axios.post('api/produto/store', formData, config)
             .then(response=>{
                 if(response.status == 201){
