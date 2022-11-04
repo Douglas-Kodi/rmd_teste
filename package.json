@@ -2,10 +2,7 @@
     "private": true,
     "scripts": {
         "dev": "vite",
-        "build": "vite build",
-        "postinstall": "npm run build",
-        "start": "node server js",
-        "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm run dev"
+        "build": "vite build"
     },
     "devDependencies": {
         "@inertiajs/inertia": "^0.11.0",
