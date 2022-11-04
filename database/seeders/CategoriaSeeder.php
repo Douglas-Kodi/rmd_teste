@@ -17,17 +17,15 @@ class CategoriaSeeder extends Seeder
     {
         Categoria::create(
             [
-                [
-                    'nome' => 'Fruta',
-                    'imagem' => 'fruta.png',
-                    'deleted_at' => null,
-                ], 
-                [
-                    'nome' => 'Vegetal',
-                    'imagem' => 'vegetal.png',
-                    'deleted_at' => null,
-                ],      
-            ]
+                'nome' => 'Fruta',
+                'imagem' => 'fruta.png',
+                'deleted_at' => null,
+            ], 
+            [
+                'nome' => 'Vegetal',
+                'imagem' => 'vegetal.png',
+                'deleted_at' => null,
+            ],      
         );
     }
 }
