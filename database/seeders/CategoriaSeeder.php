@@ -15,7 +15,7 @@ class CategoriaSeeder extends Seeder
      */
     public function run()
     {
-        Categoria::create(
+        $categorias = [
             [
                 'nome' => 'Fruta',
                 'imagem' => 'fruta.png',
@@ -26,6 +26,7 @@ class CategoriaSeeder extends Seeder
                 'imagem' => 'vegetal.png',
                 'deleted_at' => null,
             ],      
-        );
+        ];
+        Categoria::create($categorias);
     }
 }
