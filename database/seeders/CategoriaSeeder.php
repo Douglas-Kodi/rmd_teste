@@ -15,7 +15,7 @@ class CategoriaSeeder extends Seeder
      */
     public function run()
     {
-        User::create(
+        Categoria::create(
             [
                 [
                     'nome' => 'Fruta',
