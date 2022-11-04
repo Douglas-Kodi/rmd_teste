@@ -27,6 +27,6 @@ class CategoriaSeeder extends Seeder
                 'deleted_at' => null,
             ],      
         ];
-        Categoria::create($categorias);
+        Categoria::insert($categorias);
     }
 }
