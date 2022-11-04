@@ -20,10 +20,12 @@ class CategoriaSeeder extends Seeder
                 [
                     'nome' => 'Fruta',
                     'imagem' => 'fruta.png',
+                    'deleted_at' => null,
                 ], 
                 [
                     'nome' => 'Vegetal',
                     'imagem' => 'vegetal.png',
+                    'deleted_at' => null,
                 ],      
             ]
         );
