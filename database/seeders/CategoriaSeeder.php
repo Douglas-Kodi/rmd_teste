@@ -4,7 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
-use App\Categoria;
+use App\Models\Categoria;
 
 class CategoriaSeeder extends Seeder
 {
@@ -19,11 +19,11 @@ class CategoriaSeeder extends Seeder
             [
                 [
                     'nome' => 'Fruta',
-                    'imagem' => 'fruta.png'
+                    'imagem' => 'fruta.png',
                 ], 
                 [
                     'nome' => 'Vegetal',
-                    'imagem' => 'vegetal.png'
+                    'imagem' => 'vegetal.png',
                 ],      
             ]
         );
